@@ -1,6 +1,6 @@
 {
   "name": "ndx-impersonate",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "admins can impersonate another user for ndx-framework",
   "main": "build/index.js",
   "scripts": {
