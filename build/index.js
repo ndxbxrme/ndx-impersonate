@@ -1,7 +1,6 @@
 (function() {
   'use strict';
   module.exports = function(ndx) {
-    console.log('wowza');
     ndx.app.get('/api/impersonate/:userId', ndx.authenticate(['superadmin', 'admin', 'system']), function(req, res, next) {
       res.cookie('impersonate', ndx.generateToken(ndx.user[ndx.settings.AUTO_ID], null), {
         maxAge: 7 * 24 * 60 * 60 * 1000
